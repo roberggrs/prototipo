@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi perfil | MujerListas</title>
+    <link rel="stylesheet" href="styles4.css">
+    <link rel="stylesheet" href="styles8.css">
+</head>
+<body>
+    <header class="barra-superior">
+        <a class="marca" href="inicio.html" aria-label="MujerListas, inicio">
+            <img src="imagenes/M.png" alt="" class="logo">
+            <span>MujerListas</span>
+        </a>
+
+        <nav class="navegacion" aria-label="Navegación principal">
+            <a href="inicio.html">Inicio</a>
+            <a href="#mensajes">Mensajes</a>
+            <a href="capacitaciones.html">Capacitaciones</a>
+        </nav>
+
+        <div class="acciones-usuario">
+            <button class="notificaciones" type="button" aria-label="Notificaciones">
+                <img src="iconos/campana.png" alt="">
+            </button>
+            <a class="avatar" href="perfil.html" aria-label="Mi perfil">C</a>
+        </div>
+    </header>
+
+    <main class="pagina-perfil">
+        <aside class="menu-perfil" aria-label="Secciones del perfil">
+            <a href="#informacion"><span aria-hidden="true">✎</span>Editar perfil</a>
+            <a href="#seguridad"><span aria-hidden="true">●</span>Seguridad</a>
+            <a href="#configuracion"><span aria-hidden="true">⚙</span>Configuración</a>
+        </aside>
+
+        <div class="contenido-perfil">
+            <section class="seccion-perfil" id="informacion">
+                <div class="encabezado-perfil">
+                    <div>
+                        <p class="etiqueta-perfil">MI CUENTA</p>
+                        <h1>Información básica</h1>
+                    </div>
+                    <div class="avatar avatar-perfil" aria-label="Inicial del perfil">C</div>
+                </div>
+
+                <div class="formulario-perfil">
+                    <div class="campos-perfil">
+                        <label class="campo-perfil">
+                            <span>Primer nombre</span>
+                            <input type="text" name="primer-nombre" autocomplete="given-name">
+                        </label>
+                        <label class="campo-perfil">
+                            <span>Segundo nombre</span>
+                            <input type="text" name="segundo-nombre" autocomplete="additional-name">
+                        </label>
+                        <label class="campo-perfil">
+                            <span>CC</span>
+                            <input type="text" name="documento" inputmode="numeric" autocomplete="off">
+                        </label>
+                        <label class="campo-perfil campo-completo">
+                            <span>Email</span>
+                            <input type="email" name="email" autocomplete="email">
+                        </label>
+                        <label class="campo-perfil campo-completo">
+                            <span>Sobre mí</span>
+                            <textarea name="sobre-mi" rows="5"></textarea>
+                        </label>
+                    </div>
+                    <div class="botones-perfil">
+                        <a class="boton-secundario" href="inicio.html">Cancelar</a>
+                        <button class="boton-guardar" type="button">Guardar</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="seccion-perfil seccion-secundaria" id="seguridad">
+                <p class="etiqueta-perfil">PROTEGE TU CUENTA</p>
+                <h2>Seguridad</h2>
+                <p>Mantén tu contraseña segura y evita compartirla con otras personas.</p>
+            </section>
+
+            <section class="seccion-perfil seccion-secundaria" id="configuracion">
+                <p class="etiqueta-perfil">PREFERENCIAS</p>
+                <h2>Configuración</h2>
+                <label class="preferencia-perfil">
+                    <span>Recibir notificaciones sobre nuevas oportunidades</span>
+                    <input type="checkbox" checked>
+                </label>
+            </section>
+        </div>
+    </main>
+
+    <footer class="pie"></footer>
+</body>
+</html>

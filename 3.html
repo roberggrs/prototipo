@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="regist">
+            <h1>Registrate</h1>
+        </div>
+        <img src="imagenes\M.png" alt="Logo de MujerListas" class="logo">
+    </nav>
+
+    <main class="contenido">
+        <section class="registro" aria-label="Crear cuenta">
+            <div class="avatar" aria-hidden="true">
+                <span class="avatar-cabeza"></span>
+                <span class="avatar-cuerpo"></span>
+            </div>
+
+            <form class="formulario">
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" name="nombre" type="text" placeholder="Nombre" autocomplete="name" required>
+                </div>
+
+                <div class="campo">
+                    <label for="contrasena">Contraseña</label>
+                    <input id="contrasena" name="contrasena" type="password" placeholder="********" autocomplete="new-password" required>
+                </div>
+
+                <div class="campo campo-confirmar">
+                    <label for="confirmar-contrasena">Confirma contraseña</label>
+                    <input id="confirmar-contrasena" name="confirmar-contrasena" type="password" placeholder="********" autocomplete="new-password" required>
+                </div>
+
+                <label class="terminos" for="aceptar-terminos">
+                    <span>Aceptar términos y<br>condiciones</span>
+                    <input id="aceptar-terminos" name="aceptar-terminos" type="checkbox" required>
+                </label>
+
+                <button class="crear-cuenta" type="submit"> <a href="2.html"> Crear cuenta</a></button>
+                <a class="iniciar-sesion" href="#">Inicia sesión</a>
+            </form>
+        </section>
+    </main>
+
+    <footer class="pie"></footer>
+</body>
+</html>

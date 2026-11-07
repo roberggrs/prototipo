@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofertas de empleo | MujerListas</title>
+    <link rel="stylesheet" href="styles4.css">
+</head>
+<body>
+    <header class="barra-superior">
+        <a class="marca" href="inicio.html" aria-label="MujerListas, inicio">
+            <img src="imagenes/M.png" alt="" class="logo">
+            <span>MujerListas</span>
+        </a>
+
+        <nav class="navegacion" aria-label="Navegación principal">
+            <a href="inicio.html" aria-current="page">Inicio</a>
+            <a href="#mensajes">Mensajes</a>
+            <a href="capacitaciones.html">Capacitaciones</a>
+        </nav>
+
+        <div class="acciones-usuario">
+            <button class="notificaciones" type="button" aria-label="Notificaciones">
+                <img src="iconos/campana.png" alt="">
+            </button>
+            <a class="avatar" href="perfil.html" aria-label="Perfil de usuario">C</a>
+        </div>
+    </header>
+
+    <div class="disposicion">
+        <aside class="filtros" aria-label="Filtros de ofertas">
+            <h2>Filtros</h2>
+            <label class="opcion-filtro">
+                <span>Tiempo completo</span>
+                <input type="checkbox" checked>
+            </label>
+            <label class="opcion-filtro">
+                <span>Medio Tiempo</span>
+                <input type="checkbox">
+            </label>
+            <label class="opcion-filtro">
+                <span>Todo</span>
+                <input type="checkbox">
+            </label>
+            <label class="filtro-salario" for="salario">Rango salarial</label>
+            <input id="salario" class="control-salario" type="range" min="0" max="100" value="82">
+        </aside>
+
+        <main class="contenido">
+            <form class="busqueda" role="search" action="#" method="get">
+                <label class="solo-lectores" for="buscar">Buscar empleo</label>
+                <input id="buscar" name="q" type="search" placeholder="Busca tu empleo soñado">
+                <button type="submit" aria-label="Buscar">
+                    <span class="lupa" aria-hidden="true"></span>
+                </button>
+            </form>
+
+            <section class="ofertas" aria-label="Ofertas de empleo">
+                <article class="tarjeta-oferta">
+                    <h2>Auxiliar de ventas</h2>
+                    <h3>Comercializadora del Caribe</h3>
+                    <p class="ubicacion">📍 Cartagena · Tiempo completo</p>
+                    <p class="descripcion">Atención al cliente, organización de productos y apoyo en ventas</p>
+                    <a class="boton-oferta" href="detalle.html">Ver oferta</a>
+                </article>
+
+                <article class="tarjeta-oferta">
+                    <h2>Asistente administrativa</h2>
+                    <h3>Servicios Integrales del Norte</h3>
+                    <p class="ubicacion">📍 Cartagena · Tiempo completo</p>
+                    <p class="descripcion">Apoyo en documentos, registros y organización de información</p>
+                    <a class="boton-oferta" href="detalle.html">Ver oferta</a>
+                </article>
+
+                <article class="tarjeta-oferta">
+                    <h2>Asesora de servicio al cliente</h2>
+                    <h3>Conecta Caribe</h3>
+                    <p class="ubicacion">📍 Cartagena · Medio tiempo</p>
+                    <p class="descripcion">Atender consultas, resolver dudas y orientar a los clientes</p>
+                    <a class="boton-oferta" href="detalle.html">Ver oferta</a>
+                </article>
+
+                <article class="tarjeta-oferta">
+                    <h2>Auxiliar de cocina</h2>
+                    <h3>Sabores de mi Tierra</h3>
+                    <p class="ubicacion">📍 Cartagena · Tiempo completo</p>
+                    <p class="descripcion">Preparación básica de alimentos y organización del área de trabajo</p>
+                    <a class="boton-oferta" href="detalle.html">Ver oferta</a>
+                </article>
+
+                <article class="tarjeta-oferta">
+                    <h2>Auxiliar de inventario</h2>
+                    <h3>Distribuciones Bolívar</h3>
+                    <p class="ubicacion">📍 Cartagena · Tiempo completo</p>
+                    <p class="descripcion">Registrar productos, verificar existencias y organizar mercancía.</p>
+                    <a class="boton-oferta" href="detalle.html">Ver oferta</a>
+                </article>
+
+                <article class="tarjeta-oferta">
+                    <h2>Asistente de emprendimiento</h2>
+                    <h3>Emprende Caribe</h3>
+                    <p class="ubicacion">📍 Cartagena · Medio tiempo</p>
+                    <p class="descripcion">Apoyar tareas de organización, atención y seguimiento de pedidos</p>
+                    <a class="boton-oferta" href="detalle.html">Ver oferta</a>
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <footer class="pie"></footer>
+</body>
+</html>

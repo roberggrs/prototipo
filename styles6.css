@@ -1,0 +1,83 @@
+body {
+    min-height: 100vh;
+}
+
+.confirmacion {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px 30px;
+    text-align: center;
+}
+
+.icono-exito {
+    display: grid;
+    width: 108px;
+    height: 108px;
+    margin-bottom: 10px;
+    place-items: center;
+    border: 9px solid #82dd83;
+    border-radius: 50%;
+    background: #35c735;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+}
+
+.icono-exito span {
+    width: 31px;
+    height: 54px;
+    transform: translateY(-4px) rotate(45deg);
+    border-right: 11px solid #fff;
+    border-bottom: 11px solid #fff;
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.25));
+}
+
+.confirmacion h1 {
+    margin: 0;
+    color: #7251d1;
+    font-size: 42px;
+    font-weight: 500;
+}
+
+.confirmacion p {
+    margin: 29px 0 30px;
+    color: #7251d1;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.confirmacion .boton-mas-ofertas {
+    width: 155px;
+    min-height: 34px;
+    background: #7251d1;
+    color: #fff;
+}
+
+.confirmacion .boton-mas-ofertas:hover,
+.confirmacion .boton-mas-ofertas:focus-visible {
+    background: #5a3db8;
+}
+
+.pie {
+    min-height: 34px;
+}
+
+@media (max-width: 600px) {
+    .confirmacion {
+        padding-top: 24px;
+    }
+
+    .icono-exito {
+        width: 92px;
+        height: 92px;
+    }
+
+    .confirmacion h1 {
+        font-size: 36px;
+    }
+
+    .confirmacion p {
+        margin: 24px 0;
+        font-size: 20px;
+    }
+}

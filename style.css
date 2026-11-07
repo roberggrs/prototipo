@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: open sans, sans-serif;
+    background-image: url('imagenes/fondopng.png');
+    background-size: cover;
+    background-position: center;
+    background-size: cover;
+   min-height: 100vh;
+
+    
+
+
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+.navbar {
+    display: flex;
+    background-color:#7251d1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    padding-right: 30px;
+    
+    
+    
+}
+
+.menus , a {
+    color: white;
+    display: flex;
+    gap: 30px;
+    margin-left: 20px;
+    justify-content: end;
+   text-decoration: none;
+     
+   
+}
+
+.bienvenida {
+    font-family:open sans, sans-serif;
+    margin-top: 100px;
+    width: 30%;    
+    margin-left: 10%;
+    justify-content: center;
+
+    h1 {
+        color: #101010;
+       text-align: center;
+       font-size: 50px;
+    }
+
+    h2 {
+        color: #7251d1;
+        text-align: center;
+        font-size: 40px;
+    }
+    p {
+        color: grey;
+        font-size: 20px;
+        text-align: center;
+    }
+   
+}
+
+.descripcion {
+    font-size: 30px;
+    color: grey;
+    
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 145px;
+    right: 70px;
+    width: 42%;
+    height: 80%;
+    border-radius: 20px;
+   box-shadow: 0 4px 16px rgba(83, 55, 160, 0.2);
+   background-color: #ffffff;
+
+
+   img {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+   position: static;
+   align-items: center;
+   }
+}
+
+.login-texto {
+    text-align: center;
+    margin-top: 20px;
+    font-family: open sans, sans-serif;
+
+    P {
+        color: grey;
+        font-size: 20px;
+    }
+}
+
+.formularioinicio{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    font-family: open sans, sans-serif;
+    font-size:30px;
+
+    input {
+        
+        border: 1px solid #7251d1;
+        border-radius: 5px;        
+        width: 100%;     
+        padding: 15px 20px;  
+        font-size: 19px;         
+       
+
+    }
+
+
+    .iccontra {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+.boton-inicio {   
+
+
+    
+    background-color: #7251d1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+
+    &:hover {
+        background-color: #5a3db8;
+    }
+}
+
+
+.boton-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.recuperar {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #7251d1;
+    cursor: pointer;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auxiliar de ventas | MujerListas</title>
+    <link rel="stylesheet" href="styles4.css">
+    <link rel="stylesheet" href="styles5.css">
+</head>
+<body>
+    <header class="barra-superior">
+        <a class="marca" href="inicio.html" aria-label="MujerListas, inicio">
+            <img src="imagenes/M.png" alt="" class="logo">
+            <span>MujerListas</span>
+        </a>
+
+        <nav class="navegacion" aria-label="Navegación principal">
+            <a href="inicio.html" aria-current="page">Inicio</a>
+            <a href="#mensajes">Mensajes</a>
+            <a href="capacitaciones.html">Capacitaciones</a>
+        </nav>
+
+        <div class="acciones-usuario">
+            <button class="notificaciones" type="button" aria-label="Notificaciones">
+                <img src="iconos/campana.png" alt="">
+            </button>
+            <a class="avatar" href="perfil.html" aria-label="Perfil de usuario">C</a>
+        </div>
+    </header>
+
+    <div class="disposicion disposicion-detalle">
+        <aside class="filtros" aria-label="Filtros de ofertas">
+            <h2>Filtros</h2>
+            <label class="opcion-filtro">
+                <span>Tiempo completo</span>
+                <input type="checkbox" checked>
+            </label>
+            <label class="opcion-filtro">
+                <span>Medio Tiempo</span>
+                <input type="checkbox">
+            </label>
+            <label class="opcion-filtro">
+                <span>Todo</span>
+                <input type="checkbox">
+            </label>
+            <label class="filtro-salario" for="salario">Rango salarial</label>
+            <input id="salario" class="control-salario" type="range" min="0" max="100" value="82">
+        </aside>
+
+        <main class="contenido contenido-detalle">
+            <h1 class="titulo-detalle">Detalles de oferta</h1>
+
+            <article class="panel-detalle" aria-labelledby="nombre-oferta">
+                <div class="metadatos-oferta">
+                    <p class="ubicacion-detalle">📍 Cartagena</p>
+                    <p class="contrato"><strong>Tipo de contrato</strong><span>Por definir</span></p>
+                </div>
+
+                <div class="informacion-oferta">
+                    <h2 id="nombre-oferta">Auxiliar de ventas</h2>
+                    <h3>Comercializadora del Caribe</h3>
+
+                    <section class="seccion-descripcion">
+                        <h3>Descripción del empleo</h3>
+                        <p>Buscamos una persona responsable y comprometida<br class="salto-escritorio"> para apoyar las actividades de ventas, brindar<br class="salto-escritorio"> atención a los clientes y mantener organizados los<br class="salto-escritorio"> productos del establecimiento.</p>
+                    </section>
+
+                    <section class="seccion-lista">
+                        <h3>Funciones principales</h3>
+                        <ul>
+                            <li>Atender y orientar a los clientes.</li>
+                            <li>Organizar y revisar los productos.</li>
+                            <li>Apoyar las actividades de venta.</li>
+                            <li>Mantener ordenada el área de trabajo.</li>
+                        </ul>
+                    </section>
+
+                    <section class="seccion-lista requisitos">
+                        <h3>Requisitos</h3>
+                        <ul>
+                            <li>Buena comunicación y disposición para aprender.</li>
+                            <li>Responsabilidad y puntualidad.</li>
+                            <li>Capacidad para trabajar en equipo.</li>
+                            <li>Experiencia en ventas deseable, no indispensable.</li>
+                        </ul>
+                    </section>
+
+                    <div class="acciones-oferta">
+                        <a class="boton-postular" href="postulacion-exitosa.html">Postularme</a>
+                        <a class="boton-mas-ofertas" href="inicio.html">Ver más ofertas</a>
+                    </div>
+                </div>
+
+                <p class="salario"><strong>Salario mensual</strong><span>$1.750.000</span></p>
+            </article>
+        </main>
+    </div>
+
+    <footer class="pie"></footer>
+</body>
+</html>

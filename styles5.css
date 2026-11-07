@@ -1,0 +1,220 @@
+.disposicion-detalle {
+    gap: 31px;
+    padding-right: 10.8%;
+    padding-bottom: 10px;
+}
+
+.contenido-detalle {
+    display: flex;
+    min-height: 0;
+    flex-direction: column;
+}
+
+.titulo-detalle {
+    margin: 0 0 11px 8px;
+    color: #7251d1;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.panel-detalle {
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    min-height: 497px;
+    padding: 14px 18px 56px;
+    border: 1px solid #7251d1;
+}
+
+.metadatos-oferta {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.ubicacion-detalle {
+    margin: -9px 0 0 -5px;
+    font-size: 16px;
+}
+
+.contrato {
+    display: flex;
+    flex-direction: column;
+    margin: -10px 0 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.informacion-oferta {
+    width: min(100%, 560px);
+    text-align: center;
+}
+
+.informacion-oferta > h2 {
+    margin: 0 0 15px;
+    color: #7251d1;
+    font-size: 16px;
+}
+
+.informacion-oferta > h3,
+.seccion-descripcion h3,
+.seccion-lista h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.informacion-oferta > h3 {
+    margin-bottom: 10px;
+}
+
+.seccion-descripcion h3 {
+    margin-bottom: 12px;
+}
+
+.seccion-descripcion p {
+    margin: 0 0 14px;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.seccion-lista {
+    text-align: center;
+}
+
+.seccion-lista ul {
+    display: inline-block;
+    margin: 13px 0 0;
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 1;
+    text-align: left;
+}
+
+.requisitos h3 {
+    margin-top: 2px;
+}
+
+.requisitos ul {
+    margin-top: 13px;
+}
+
+.acciones-oferta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 11px;
+    margin-top: 27px;
+}
+
+.boton-postular,
+.boton-mas-ofertas {
+    display: grid;
+    width: 136px;
+    min-height: 31px;
+    place-items: center;
+    border: 1px solid #7251d1;
+    border-radius: 20px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.boton-postular {
+    background: #7251d1;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.boton-mas-ofertas {
+    background: #fff;
+    color: #7251d1;
+    text-decoration: underline;
+}
+
+.boton-postular:hover,
+.boton-postular:focus-visible {
+    background: #5a3db8;
+}
+
+.boton-mas-ofertas:hover,
+.boton-mas-ofertas:focus-visible {
+    background: #f3efff;
+}
+
+.salario {
+    position: absolute;
+    right: 24px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .disposicion-detalle {
+        padding-right: 20px;
+    }
+
+    .panel-detalle {
+        min-height: 520px;
+    }
+}
+
+@media (max-width: 600px) {
+    .disposicion-detalle {
+        gap: 16px;
+        padding: 12px 14px 28px;
+    }
+
+    .contenido-detalle {
+        min-height: auto;
+    }
+
+    .titulo-detalle {
+        margin: 0 0 10px;
+    }
+
+    .panel-detalle {
+        min-height: 0;
+        padding: 18px 12px 88px;
+    }
+
+    .ubicacion-detalle {
+        margin: -10px 0 0;
+        font-size: 14px;
+    }
+
+    .contrato {
+        margin: -9px 0 0;
+        font-size: 12px;
+    }
+
+    .informacion-oferta {
+        margin-top: 22px;
+    }
+
+    .seccion-descripcion p {
+        line-height: 1.15;
+    }
+
+    .salto-escritorio {
+        display: none;
+    }
+
+    .seccion-lista ul {
+        font-size: 14px;
+        line-height: 1.15;
+    }
+
+    .salario {
+        right: 12px;
+        bottom: 12px;
+        font-size: 14px;
+    }
+}
